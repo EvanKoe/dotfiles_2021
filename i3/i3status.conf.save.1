@@ -1,0 +1,61 @@
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+	output_format = "i3bar"
+	interval = 1
+	color_good="#FFFFFF"
+	color_degraded="#ffd75f"
+	color_bad="#d75f5f"
+}
+
+order += "volume master"
+order += "battery 0"
+order += "wireless wlo1"
+order += "tztime local"
+
+wireless wlo1 {
+        format_up = "<span background='#bd93f9'>  </span><span background='#e5e9f0'> %essid </span>"
+        format_down = "<span background='#bd93f9'>  </span><span background='#e5e9f0'> Disconnected </span>"
+}
+
+tztime local {
+        format = " %Y-%m-%d %H:%M:%S "
+}
+
+disk "/home" {
+     format = " %avail "
+}
+
+disk "/" {
+     format = " %avail "
+}
+
+cpu_usage {
+    format = " %usage "
+}
+
+load {
+    format = " %5min 5min "
+}
+
+volume master {
+    format = " %volume "
+    format_muted = " %volume "
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+battery 0 {
+    format = "%status %percentage "
+    format_down = " DOWN "
+    status_chr = " CHARGING "
+    status_bat = " BATTERY "
+    status_unk = " UNKNOWN "
+    #last_full_capacity = true
+    status_full = " FULL "
+    path = "/sys/class/power_supply/BAT%d/uevent"
+}

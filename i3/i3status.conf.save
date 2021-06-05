@@ -1,0 +1,48 @@
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+	output_format = "i3bar"
+	interval = 1
+	colors = false
+	markup = pango
+	#color_good="#FFFFFF"
+	#color_degraded="#ffd75f"
+	#color_bad="#d75f5f"
+}
+
+order += "volume master"
+order += "battery 0"
+order += "wireless wlo1"
+order += "tztime local"
+
+wireless wlo1 {
+        format_up = "<span background='#bd93f9'> 📶 </span><span background='#e5e9f0'> %essid </span>"
+        format_down = "<span background='#bd93f9'> 📶 </span><span background='#e5e9f0'> Disconnected </span>"
+}
+
+tztime local {
+#        format = " %Y-%m-%d %H:%M:%S "
+	format = "<span background='#8be9fd'> 🕙 </span><span background='#212121'> %time </span>"
+	format_time = "%a %-d %b %H:%M"
+}
+
+volume master {
+        format = "<span background='#00ff00'> 🔊 </span><span background='#212121'> %volume </span>"
+        format_muted = "<span background='#ff0000'>  </span><span background='#e5e9f0'> Muted </span>"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+battery 0 {
+	format = "<span background='#f1fa8c'> ⚡ </span><span background='#e5e9f0'> %status %percentage </span>"
+	format_down = " DOWN "
+	status_chr = " CHARGING "
+	status_bat = " BATTERY "
+	    status_unk = " UNKNOWN "
+    status_full = " FULL "
+    path = "/sys/class/power_supply/BAT%d/uevent"
+}
