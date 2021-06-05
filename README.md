@@ -32,6 +32,8 @@ Here are my config files in case my Linux goes down. You should be able to find 
 - i3 gaps (you'll have to install i3-gaps to make it work)
 - custom i3 bar (changing colors when plugged, when wifi disabled/enabled/connected, sound (red if muted))
 - custom bindings (meta+d to get dmenu (you're gonna need to install it too))
+- custom lock screen (screenshot, blurred, add lock icon)
 
+# Usage
 That's it. Feel free to get them, but try not to modify the repo please, cause it is for private usage.
 Thanks
