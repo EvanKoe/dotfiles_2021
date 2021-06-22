@@ -3,7 +3,17 @@ Here are my config files in case my Linux goes down. You should be able to find 
 - Emacs
 - Nano
 - Zsh
-- i3 (tiling manager)
+- i3-gaps (tiling manager)
+- nvim (neovim)
+- polybar
+
+# Screenshots
+
+![i3](https://user-images.githubusercontent.com/72010109/122971549-757f6780-d38f-11eb-97e8-a7ab4e0a95aa.png)
+
+![neovim](https://user-images.githubusercontent.com/72010109/122971570-79ab8500-d38f-11eb-9f6e-7cbbc4ddffa1.png)
+
+![tree](https://user-images.githubusercontent.com/72010109/122971580-7dd7a280-d38f-11eb-845d-3c9b376a5d51.png)
 
 # Features in .emacs
 - Linum mode
@@ -28,7 +38,7 @@ Here are my config files in case my Linux goes down. You should be able to find 
 - auto update (every 30 days)
 - custom prompt and rprompt (with non-ASCII characters, works well on Terminator/Konsole)
 
-# Features on i3 (tiling manager)
+# Features in i3-gaps (tiling manager)
 - i3 gaps (you'll have to install i3-gaps to make it work)
 - custom i3 bar (changing colors when plugged, when wifi disabled/enabled/connected, sound (red if muted))
 - custom bindings (meta+d to get dmenu (you're gonna need to install it too))
@@ -39,6 +49,12 @@ Here are my KDE config archives. Those are KDE themes I made by myself. Feel fre
 - MacOSX.tar.gz : a MacOS-like interface, with many little modifications I found useful.
 - Final.tar.gz : the last KDE config I made before switching to i3. It look like a chromeOS with a macOS top bar. It's strange but it's really beautiful.
 - Blurred.tar.gz : a cleaner version of a windows-like interface, with so much blurred bars. Final.tar.gz is an improved version of this one.
+
+# Features in nvim (neovim)
+- Configured using .lua files (not .vim anymore)
+- vim-tree (Ctrl + N to display a tree of your working directory)
+- onedark theme
+I downloaded the NvChad configuration (https://github.com/siduck76/NvChad) but modified it a bit.
 
 # Usage
 That's it. Feel free to get them, but try not to modify the repo please, cause it is for private usage.
