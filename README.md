@@ -10,10 +10,13 @@ Here are my config files in case my Linux goes down. You should be able to find 
 # Screenshots
 
 ![i3](https://user-images.githubusercontent.com/72010109/122971549-757f6780-d38f-11eb-97e8-a7ab4e0a95aa.png)
-
-![neovim](https://user-images.githubusercontent.com/72010109/122971570-79ab8500-d38f-11eb-9f6e-7cbbc4ddffa1.png)
+i3 usage (see keybindings in i3/config)
 
 ![tree](https://user-images.githubusercontent.com/72010109/122971580-7dd7a280-d38f-11eb-845d-3c9b376a5d51.png)
+onedark theme and nvim-tree
+
+![neovim](https://user-images.githubusercontent.com/72010109/122971570-79ab8500-d38f-11eb-9f6e-7cbbc4ddffa1.png)
+NvChad made an awesome dragon in ascii-art on the starting vim menu. Thanks to him !
 
 # Features in .emacs
 - Linum mode
@@ -47,7 +50,7 @@ Here are my config files in case my Linux goes down. You should be able to find 
 # KDE config files
 Here are my KDE config archives. Those are KDE themes I made by myself. Feel free to download them if you wanna give em a try ! The only thing you have to do is to install the "plasma custom saver" applet (download : https://store.kde.org/p/1298955/), import the tar.gz and apply it. Here are three of my configurations :
 - MacOSX.tar.gz : a MacOS-like interface, with many little modifications I found useful.
-- Final.tar.gz : the last KDE config I made before switching to i3. It look like a chromeOS with a macOS top bar. It's strange but it's really beautiful.
+- Final.tar.gz : the last KDE config I made before switching to i3. It looks like a chromeOS with a macOS top bar. It's strange but it's really beautiful.
 - Blurred.tar.gz : a cleaner version of a windows-like interface, with so much blurred bars. Final.tar.gz is an improved version of this one.
 
 # Features in nvim (neovim)
