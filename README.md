@@ -15,8 +15,8 @@ i3 usage (see keybindings in i3/config)
 ![tree](https://user-images.githubusercontent.com/72010109/122971580-7dd7a280-d38f-11eb-845d-3c9b376a5d51.png)
 onedark theme and nvim-tree
 
-![neovim](https://user-images.githubusercontent.com/72010109/122971570-79ab8500-d38f-11eb-9f6e-7cbbc4ddffa1.png)
-NvChad made an awesome dragon in ascii-art on the starting vim menu. Thanks to him !
+![image](https://user-images.githubusercontent.com/72010109/123176359-90cb9f00-d483-11eb-98c5-bc6c9f560f14.png)
+NvChad made an awesome dragon in ascii-art on the starting vim menu. Thanks to him ! (See that I took the liberty to modify the little bottom text, which was "NvChad v0.5", to make it a bit ... more motivating :D )
 
 # Features in .emacs
 - Linum mode
@@ -46,6 +46,7 @@ NvChad made an awesome dragon in ascii-art on the starting vim menu. Thanks to h
 - custom i3 bar (changing colors when plugged, when wifi disabled/enabled/connected, sound (red if muted))
 - custom bindings (meta+d to get dmenu (you're gonna need to install it too))
 - custom lock screen (screenshot, blurred, add lock icon)
+- printscreen button takes a screeshot, save it in Pictures/Screenshots, and copy it into the clipboard
 
 # KDE config files
 Here are my KDE config archives. Those are KDE themes I made by myself. Feel free to download them if you wanna give em a try ! The only thing you have to do is to install the "plasma custom saver" applet (download : https://store.kde.org/p/1298955/), import the tar.gz and apply it. Here are three of my configurations :
@@ -57,8 +58,11 @@ Here are my KDE config archives. Those are KDE themes I made by myself. Feel fre
 - Configured using .lua files (not .vim anymore)
 - vim-tree (Ctrl + N to display a tree of your working directory)
 - onedark theme
+- An awesome fucking dragon is displayed in the main menu
 I downloaded the NvChad configuration (https://github.com/siduck76/NvChad) but modified it a bit.
 
+Note for myself : The next thing I have to put in nvim is a indent of 4 spaces (currently 2).
+
 # Usage
-That's it. Feel free to get them, but try not to modify the repo please, cause it is for private usage.
+That's it. Feel free to download them, but DO NOT modify the repo : it is for private usage.
 Thanks
