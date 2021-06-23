@@ -1,6 +1,7 @@
 local set = vim.o
 
 set.mouse = 'nv'
+vim.api.nvim_command('tnoremap <Esc> <C-\\><C-n>')
 
 -- load all plugins
 

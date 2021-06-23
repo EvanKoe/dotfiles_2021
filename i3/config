@@ -155,6 +155,7 @@ bindsym Print exec spectacle
 bindsym $mod+F3 exec xbacklight -inc 10
 bindsym $mod+F2 exec xbacklight -dec 10
 bindsym $mod+b exec blueman-manager
+bindsym --release Print exec $HOME/.config/i3/screen.sh
 
 # shutdown, restart...
 set $mode_system What do you wanna do ? (l)ogout, (s)uspend, (h)ibernate, (r)eboot, (CTRL+s)hutdown
@@ -263,4 +264,4 @@ gaps inner 15
 gaps outer 0
 gaps top 0
 gaps bottom 50
-
+<
