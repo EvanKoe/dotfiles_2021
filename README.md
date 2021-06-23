@@ -34,9 +34,9 @@ NvChad made an awesome dragon in ascii-art on the starting vim menu. Thanks to h
 
 # Features in .zshrc
 - added oh-my-zsh
-- theme agnoster
 - lots of aliases
-- a random Start Wars and Doom quotes generator
+- even more aliases (mines are especially here to avoid syntax errors like "maek" instead of "make", "suod" instead of "sudo" ...)
+- a random Start Wars and Doom quotes generator at startup
 - plugins : git and zsh-autosuggestions
 - auto update (every 30 days)
 - custom prompt and rprompt (with non-ASCII characters, works well on Terminator/Konsole)

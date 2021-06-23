@@ -10,11 +10,29 @@ export TERM=xterm-256color
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
 #ZSH_THEME="bira"
 eval `dircolors ~/.dir_colors/dircolors`
 clear
 
+alias maek="make"
+alias mka="make"
+alias meak="make"
+alias mkae="make"
+alias mkea="make"
+
+alias nv="/usr/bin/neovim"
+alias vn="nv"
+alias norm="norminette -A -i 4 -n"
+alias dpkg="sudo dpkg -i"
+alias vpnc="protonvpn c"
+alias vpnd="protonvpn d"
+alias nu="npm uninstall"
+alias ni="npm install --save"
+alias bubulle="bubulle -ic"
+alias autoremove="sudo apt autoremove"
+alias purge="sudo apt purge"
+alias gcc="gcc -g"
 alias image="gwenview"
 alias claen="clean"
 alias clena="clean"
@@ -23,25 +41,17 @@ alias commit="git commit -m"
 alias clean="sh ~/mr_clean.sh"
 alias wifi='brave-browser "https://wifi.lc/login.php?o=m&t=r&s=b8f30bd5a02b&f=bridge-lcp-hotspot&m=AC:D5:64:87:04:0F&i=10.1.215.57&h=10.1.215.1:80&d=http%3A%2F%2Fnetworkcheck.kde.org%2F"'
 alias setkxbmap="sudo setkxbmap"
-alias gccl="gcc main.c -L . -lmy"
-alias cls="sh ~/mr_clean.sh"
-alias gccc="gcc --coverage -lcriterion"
-alias xr0="xrandr -o normal"
-alias red="redshift -O 3000"
+alias 11000="xrandr -o normal"
+alias red="redshift -O 3500"
 alias red0="redshift -x"
 alias suod="sudo"
-alias chmod="sudo chmod +x"
-alias install="sudo dnf install -y"
-alias up="sudo dnf update -y && sudo dnf upgrade -y"
+#alias chmod="sudo chmod +x"
+alias install="sudo apt install -y"
+alias isntall="install"
+alias up="sudo apt update -y && sudo apt upgrade -y"
 alias emacs="emacs -nw"
 alias zshrc="sudo nano ~/.zshrc"
 alias emah="bash /home/ekoehler/Documents/Dev/emacsCmd.sh"
-alias remove="sudo dnf remove"
-alias gzComp="tar -czvf"
-alias gzExt="tar -xzvf"
-alias xf="tar -xf"
-alias minecraft="java -jar '/home/ekoehler/Desktop/SkaiaCraft_Launcher/Mac and Linux/SkaiaCraft Launcher v3.0.jar'"
-
 
 n=$(( $RANDOM % 10 + 1 ))
 if [ $n = 1 ]
@@ -55,7 +65,7 @@ then
 	echo "In the first age, in the first battle, when the shadows first lengthened, one stood (Doom 2016 - Slayer's testament)"
 elif [ $n = 4 ]
 then
-	echo "SUDO : Unlimited poweeeeeeeer !!! (Star Wars III)"
+	echo "cc -c zsh.o -lcsfml-graphics\nIn function __start:\n(text.o:35) main function undefined\ngcc abort : make returned 1 status\nI'm kidding\nyou scared ? :D"
 elif [ $n = 5 ]
 then
 	echo "Say \"segmentation fault\" one more time and I kill you >:("
@@ -167,7 +177,8 @@ source /home/ekoehler/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 prompt_context() {}
 export PROMPT='%K{cyan}%F{black}%~ >>%f%k '
-RPROMPT='%(0?.%F{green}%?%f.%F{red}%?%f) %(0?.🙂.😒)'
+RPROMPT='%(0?.%F{green}%?%f.%F{red}%?%f) %(0?.:).:()'
+force_color_prompt=yes
 
 # To make your own prompt :
 #
@@ -194,3 +205,6 @@ RPROMPT='%(0?.%F{green}%?%f.%F{red}%?%f) %(0?.🙂.😒)'
 #
 # more infos : https://blog.balthazar-rouberol.com/customizing-your-shell.html
 
+source /home/ekoehler/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+alias luamake=/home/ekoehler/.config/nvim/lua-language-server/3rd/luamake/compile/luamake
