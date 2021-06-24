@@ -19,6 +19,8 @@ require("neoscroll").setup() -- smooth scroll
 require "nvim-lspconfig"
 require "compe-completion"
 
+require "rainbow".init()
+
 local cmd = vim.cmd
 local g = vim.g
 
@@ -65,8 +67,6 @@ vim.api.nvim_exec(
    ]],
     false
 )
-
-
 
 require "zenmode"
 require "whichkey"
