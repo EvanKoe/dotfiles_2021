@@ -7,6 +7,8 @@ Here are my config files in case my Linux goes down. You should be able to find 
 - nvim (neovim)
 - polybar
 
+I'm a newbie about making configurations... So be kind ! Maybe it is not the best way to do it, do not hesitate to tell me if something is wrong !
+
 # Screenshots
 
 ![i3](https://user-images.githubusercontent.com/72010109/122971549-757f6780-d38f-11eb-97e8-a7ab4e0a95aa.png)
@@ -58,10 +60,12 @@ Here are my KDE config archives. Those are KDE themes I made by myself. Feel fre
 - Configured using .lua files (not .vim anymore)
 - vim-tree (Ctrl + N to display a tree of your working directory)
 - onedark theme
-- An awesome fucking dragon is displayed in the main menu
+- An awesome fucking dragon is displayed in the main menu (with little motivating sentences)
+- added plugins (like rainbow brackets)
 I downloaded the NvChad configuration (https://github.com/siduck76/NvChad) but modified it a bit.
 
 Note for myself : The next thing I have to put in nvim is a indent of 4 spaces (currently 2).
+I do not manage to do that, if someone knows, please tell me... 
 
 # Usage
 That's it. Feel free to download them, but DO NOT modify the repo : it is for private usage.
