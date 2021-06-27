@@ -140,10 +140,11 @@ bindsym $mod+r mode "resize"
 # mine
 # onstart
 exec --no-startup-id systemctl stop bluetoothctl
-exec --no-startup-id nitrogen --set-auto "$HOME/Pictures/Wallpapers/i3.png"
+exec --no-startup-id nitrogen --set-auto "/home/ekoehler/Pictures/Wallpapers/i32.jpg"
 exec --no-startup-id redshift -O 3500
 exec --no-startup-id nm-applet
 focus_follows_mouse no
+exec --no-startup-id picom
 exec --no-startup-id polybar -q main -c "~/.config/polybar/material/config.ini" &
 
 # my bindings
