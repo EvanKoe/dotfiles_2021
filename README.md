@@ -11,13 +11,13 @@ I'm a newbie about making configurations... So be kind ! Maybe it is not the bes
 
 # Screenshots
 
-![i3](https://user-images.githubusercontent.com/72010109/122971549-757f6780-d38f-11eb-97e8-a7ab4e0a95aa.png)
+![image](https://user-images.githubusercontent.com/72010109/123561169-2bd7b800-d7a7-11eb-9806-69ea3d2cbf57.png)
 i3 usage (see keybindings in i3/config)
 
-![tree](https://user-images.githubusercontent.com/72010109/122971580-7dd7a280-d38f-11eb-845d-3c9b376a5d51.png)
+![image](https://user-images.githubusercontent.com/72010109/123561189-4ca00d80-d7a7-11eb-9b06-66472c2a950f.png)
 onedark theme and nvim-tree
 
-![image](https://user-images.githubusercontent.com/72010109/123176359-90cb9f00-d483-11eb-98c5-bc6c9f560f14.png)
+![image](https://user-images.githubusercontent.com/72010109/123561197-57f33900-d7a7-11eb-8679-93cad9a73242.png)
 NvChad made an awesome dragon in ascii-art on the starting vim menu. Thanks to him ! (See that I took the liberty to modify the little bottom text, which was "NvChad v0.5", to make it a bit ... more motivating :D )
 
 # Features in .emacs
@@ -66,6 +66,13 @@ I downloaded the NvChad configuration (https://github.com/siduck76/NvChad) but m
 
 Note for myself : The next thing I have to put in nvim is a indent of 4 spaces (currently 2).
 I do not manage to do that, if someone knows, please tell me... 
+
+# Features in picom
+Picom is a x11 compositor for Linux. It allows us to add graphical effects to our x11 environment (like animations, blur, transparancy...). Mine adds the following effects :
+- opacity 95% when unfocused window,
+- rounded corner (5px) on window,
+- shadow on window (bottom + right)
+- it should add blur on transparent window but it doesn't (I have to patch it... be patient !)
 
 # Usage
 That's it. Feel free to download them, but DO NOT modify the repo : it is for private usage.
