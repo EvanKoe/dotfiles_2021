@@ -9,7 +9,7 @@ Here are my config files in case my Linux goes down. You should be able to find 
 
 I'm a newbie about making configurations... So be kind ! Maybe it is not the best way to do it, do not hesitate to tell me if something is wrong !
 
-# Screenshots
+# Screenshots for i3
 
 ![image](https://user-images.githubusercontent.com/72010109/123561169-2bd7b800-d7a7-11eb-9806-69ea3d2cbf57.png)
 i3 usage (see keybindings in i3/config)
@@ -19,6 +19,16 @@ onedark theme and nvim-tree
 
 ![image](https://user-images.githubusercontent.com/72010109/123561197-57f33900-d7a7-11eb-8679-93cad9a73242.png)
 NvChad made an awesome dragon in ascii-art on the starting vim menu. Thanks to him ! (See that I took the liberty to modify the little bottom text, which was "NvChad v0.5", to make it a bit ... more motivating :D )
+
+# Screenshots for KDE
+
+![image](https://github.com/EvanKoe/configrc/blob/master/kde/screenshots/dolphin_htop.png)
+Dolphin as file explorer (theme made with Kvantum) and Konsole as terminal emulator (because Konsole allows the background transparency), with Win11 wallpaper (look in the wallpaper folder).
+
+![image](https://github.com/EvanKoe/configrc/blob/master/kde/screenshots/nvim.png)
+NvChad's neovim configuration (thanks to him !)
+
+![image](https://github.com/EvanKoe/configrc/blob/master/kde/screenshots/terminal.png)
 
 # Features in .emacs
 - Linum mode
