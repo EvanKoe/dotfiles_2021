@@ -30,6 +30,13 @@ NvChad's neovim configuration (thanks to him !)
 
 ![image](https://github.com/EvanKoe/configrc/blob/master/kde/screenshots/terminal.png)
 
+To apply my KDE configs, there are two ways :
+- With Plasma Configuration Saver : 
+  Install Plasma Config Saver from the KDE store (Plasmoid) and import any of those tar.gz file, then click on apply and restart !
+- With Konsave :
+  Install Konsave from the url : https://pythonrepo.com/repo/Prayag2-konsave
+  Then use konsave -i to import any of those .knsv files, and apply the theme using konsave -a (Not tested yet !)
+
 # Features in .emacs
 - Linum mode
 - tab width = 4
