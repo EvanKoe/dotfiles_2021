@@ -70,8 +70,9 @@ To apply my KDE configs, there are two ways :
 # KDE config files
 Here are my KDE config archives. Those are KDE themes I made by myself. Feel free to download them if you wanna give em a try ! The only thing you have to do is to install the "plasma custom saver" applet (download : https://store.kde.org/p/1298955/), import the tar.gz and apply it. Here are three of my configurations :
 - MacOSX.tar.gz : a MacOS-like interface, with many little modifications I found useful.
-- Final.tar.gz : the last KDE config I made before switching to i3. It looks like a chromeOS with a macOS top bar. It's strange but it's really beautiful.
-- Blurred.tar.gz : a cleaner version of a windows-like interface, with so much blurred bars. Final.tar.gz is an improved version of this one.
+- Final.tar.gz : It looks like a chromeOS with a macOS top bar. It's strange but it's really beautiful.
+- Blurred.tar.gz : a cleaner version of a windows-like interface, with too much blurred bars. Final.tar.gz is an improved version of this one.
+- macos11.konsv : linux, with a macos-like interface and a win11 wallpaper.
 
 # Features in nvim (neovim)
 - Configured using .lua files (not .vim anymore)
