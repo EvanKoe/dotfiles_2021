@@ -6,6 +6,7 @@ Here are my config files in case my Linux goes down. You should be able to find 
 - i3-gaps (tiling manager)
 - nvim (neovim)
 - polybar
+- KDE
 
 I'm a newbie about making configurations... So be kind ! Maybe it is not the best way to do it, do not hesitate to tell me if something is wrong !
 
