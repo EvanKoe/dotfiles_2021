@@ -11,11 +11,23 @@ floating_modifier $mod
 bindsym $mod+q kill
 bindsym $alt+F4 kill
 
-bindsym $mod+w exec terminator
-bindsym $mod+a exec brave-browser
-bindsym $mod+e exec nautilus
+# bindsym $mod+w exec terminator
+# bindsym $mod+a exec google-chrome
+# bindsym $mod+e exec nautilus
 
 # start dmenu (a program launcher)
+
+# for the first time, manually resize them, i3 will remember the setting for floating windows
+for_window [class="plasmashell"] floating enable;µ
+for_window [class="Plasma"] floating enable; border none
+for_window [title="plasma-desktop"] floating enable; border none
+for_window [title="win7"] floating enable; border none
+for_window [class="krunner"] floating enable; border none
+for_window [class="Kmix"] floating enable; border none
+for_window [class="Klipper"] floating enable; border none
+for_window [class="Plasmoidviewer"] floating enable; border none
+exec --no-startup-id wmctrl -c Plasma
+for_window [title="Desktop — Plasma"] kill; floating enable; border none
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+d exec rofi -modi drun -show drun -display-drun "Apps " -line-padding 4 \
@@ -35,10 +47,10 @@ bindsym $mod+Right focus right
 #bindsym $mod+Shift+M move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+Left move left 30
+bindsym $mod+Shift+Down move down 30
+bindsym $mod+Shift+Up move up 30
+bindsym $mod+Shift+Right move right 30
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -55,7 +67,7 @@ bindsym $mod+z layout tabbed
 bindsym $mod+s layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space floating toggle; resize set 1500 900; move window to position 200 100
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -124,10 +136,10 @@ mode "resize" {
         bindsym m resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 50 px or 10 ppt
+        bindsym Down resize grow height 50 px or 10 ppt
+        bindsym Up resize shrink height 50 px or 10 ppt
+        bindsym Right resize grow width 50 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -140,21 +152,22 @@ bindsym $mod+r mode "resize"
 # mine
 # onstart
 exec --no-startup-id systemctl stop bluetoothctl
-exec --no-startup-id nitrogen --set-auto "/home/ekoehler/Pictures/Wallpapers/i32.jpg"
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/win11light.jpeg
+# exec --no-startup-id nitrogen --set-auto "/home/ekoehler/Pictures/Wallpapers/win11.jpg"
 exec --no-startup-id redshift -O 3500
 exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 focus_follows_mouse no
-exec --no-startup-id picom
-exec --no-startup-id polybar -q main -c "~/.config/polybar/material/config.ini" &
+exec --no-startup-id picom --experimental-backends # disable picom if slow
+# exec --no-startup-id polybar -q main -c "~/.config/polybar/material/config.ini" &
 
 # my bindings
-bindsym $mod+l exec $HOME/.config/i3/lock.sh
+# bindsym $mod+l exec $HOME/.config/i3/lock.sh
 bindsym $mod+F8 exec amixer -q set Master 5%+
 bindsym $mod+F7 exec amixer -q set Master 5%-
 bindsym $mod+F6 exec amixer set Master toggle
-bindsym Print exec spectacle
-bindsym $mod+F3 exec xbacklight -inc 10
-bindsym $mod+F2 exec xbacklight -dec 10
+bindsym $mod+F3 exec $HOME/.config/i3/bright.sh 5
+bindsym $mod+F2 exec $HOME/.config/i3/bright.sh -5
 bindsym $mod+b exec blueman-manager
 bindsym --release Print exec $HOME/.config/i3/screen.sh
 
@@ -256,12 +269,9 @@ set_from_resource $white2 color15 #ffffff
 # Windows rules
 for_window [class=".*"] border pixel 0
 
-#client.focused	#212121	#212121 #ffffff
 client.focused              #ffffff #ffffff #ffffff
 client.unfocused	    #212121 #212121 #212121
 
 #i3 gaps
-gaps inner 15
-gaps outer 0
-gaps top 0
-gaps bottom 50
+gaps inner 5
+gaps outer 5
