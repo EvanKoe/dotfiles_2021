@@ -12,16 +12,29 @@ I'm a newbie about making configurations... So be kind ! Maybe it is not the bes
 
 # Screenshots for i3
 
-![image](https://user-images.githubusercontent.com/72010109/123561169-2bd7b800-d7a7-11eb-9806-69ea3d2cbf57.png)
-i3 usage (see keybindings in i3/config)
+As the \*nixporn reddit community suggested me, I recently merged i3 and KDE together, in order to make my ricing even better ! There are some screeshots :
+![image](https://github.com/EvanKoe/configrc/blob/master/assets/chrome-terminal.jpg)
 
-![image](https://user-images.githubusercontent.com/72010109/123561189-4ca00d80-d7a7-11eb-9b06-66472c2a950f.png)
-onedark theme and nvim-tree
+![image](https://github.com/EvanKoe/configrc/blob/master/assets/dolphin.jpg)
 
-![image](https://user-images.githubusercontent.com/72010109/123561197-57f33900-d7a7-11eb-8679-93cad9a73242.png)
-NvChad made an awesome dragon in ascii-art on the starting vim menu. Thanks to him ! (See that I took the liberty to modify the little bottom text, which was "NvChad v0.5", to make it a bit ... more motivating :D )
+![image](https://github.com/EvanKoe/configrc/blob/master/assets/lite-xl.jpg)
+
+Terminal: Terminator
+Shell: ZSH
+Navigator: Google Chrome,
+Wallpaper: Windows 11 light ([Download it !](https://github.com/EvanKoe/configrc/blob/master/wallpapers/win11light.jpeg))
+WM: i3
+DE: KDE
+Compositor: Picom ([Download it !](https://github.com/yshui/picom/pull/361))
+Icon pack: McMojave-circle ([Download it for KDE](https://store.kde.org/p/1305429/))
+DMenu: Rofi
+Cli editor: Neovim
+Gui editor: Lite-xl ([Download it !](https://github.com/lite-xl/lite-xl))
+File explorer: Dolphin
 
 # Screenshots for KDE
+
+Also if you want to use KDE with the default WM/Compositor (KWin), you can still download my configs in the kde/ folder : 
 
 ![image](https://github.com/EvanKoe/configrc/blob/master/kde/screenshots/dolphin_htop.png)
 Dolphin as file explorer (theme made with Kvantum) and Konsole as terminal emulator (because Konsole allows the background transparency), with Win11 wallpaper (look in the wallpaper folder).
