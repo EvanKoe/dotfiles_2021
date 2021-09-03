@@ -12,25 +12,25 @@ I'm a newbie about making configurations... So be kind ! Maybe it is not the bes
 
 # Screenshots for i3
 
-As the \*nixporn reddit community suggested me, I recently merged i3 and KDE together, in order to make my ricing even better ! There are some screeshots :
+As the \*nixporn reddit community suggested me, I recently merged i3 and KDE together, in order to make my ricing even better ! There are some screeshots : \n
 ![image](https://github.com/EvanKoe/configrc/blob/master/assets/chrome-terminal.jpg)
 
 ![image](https://github.com/EvanKoe/configrc/blob/master/assets/dolphin.jpg)
 
 ![image](https://github.com/EvanKoe/configrc/blob/master/assets/lite-xl.jpg)
 
-Terminal: Terminator
-Shell: ZSH
-Navigator: Google Chrome,
-Wallpaper: Windows 11 light ([Download it !](https://github.com/EvanKoe/configrc/blob/master/wallpapers/win11light.jpeg))
-WM: i3
-DE: KDE
-Compositor: Picom ([Download it !](https://github.com/yshui/picom/pull/361))
-Icon pack: McMojave-circle ([Download it for KDE](https://store.kde.org/p/1305429/))
-DMenu: Rofi
-Cli editor: Neovim
-Gui editor: Lite-xl ([Download it !](https://github.com/lite-xl/lite-xl))
-File explorer: Dolphin
+Terminal: Terminator \n
+Shell: ZSH \n
+Navigator: Google Chrome \n
+Wallpaper: Windows 11 light ([Download it !](https://github.com/EvanKoe/configrc/blob/master/wallpapers/win11light.jpeg)) \n
+WM: i3 \n
+DE: KDE \n
+Compositor: Picom ([Download it !](https://github.com/yshui/picom/pull/361)) \n
+Icon pack: McMojave-circle ([Download it for KDE](https://store.kde.org/p/1305429/)) \n
+DMenu: Rofi \n
+Cli editor: Neovim \n
+Gui editor: Lite-xl ([Download it !](https://github.com/lite-xl/lite-xl)) \n
+File explorer: Dolphin \n
 
 # Screenshots for KDE
 
