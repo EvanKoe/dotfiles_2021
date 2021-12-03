@@ -1,0 +1,38 @@
+im.o.background = 'light'
+# vim.o sets general settings
+
+vim.wo.colorcolumn = '80'
+# vim.wo sets window-scoped options
+
+vim.bo.filetype = 'lua'
+# vim.bo sets buffer-scoped options
+
+vim.g.mapleader = ''
+# vim.g sets global variables
+
+vim.env.FZF_DEFAULT_OPTS = '--layout=reverse'
+# vim.env sets environment variables
+
+vim.opt.autoindent = true
+vim.opt.cursorline = true
+vim.opt.autowrite = true
+# vim.opt can set global window and buffer settings
+
+local var = 'value'
+# assign a variable
+
+local boolean = true
+local list = 0, 1, 2
+local list2 = {0, 1, 2}
+local list3 = list + 3
+# push() is a simple +
+local list4 = list3 - 3
+# remove an element
+
+vim.cmd [[
+	# vimscript
+]]
+
+vim.api.nvim_set_keymap('n', '<Leader>w', ':write<CR>', {noremap = true})
+# nnoremap <Leader>w :write<CR>
+# to remap keybindings

@@ -9,16 +9,17 @@ floating_modifier $mod
 
 # kill focused window
 bindsym $mod+q kill
-bindsym $alt+F4 kill
+# bindsym $alt+F4 kill
 
-# bindsym $mod+w exec terminator
-# bindsym $mod+a exec google-chrome
+bindsym $mod+w exec konsole
+bindsym $mod+a exec chromium
+bindsym $mod+z exec "$HOME/.config/i3/echo.sh"
 # bindsym $mod+e exec nautilus
 
 # start dmenu (a program launcher)
 
 # for the first time, manually resize them, i3 will remember the setting for floating windows
-for_window [class="plasmashell"] floating enable;µ
+for_window [class="plasmashell"] floating enable;
 for_window [class="Plasma"] floating enable; border none
 for_window [title="plasma-desktop"] floating enable; border none
 for_window [title="win7"] floating enable; border none
@@ -26,7 +27,7 @@ for_window [class="krunner"] floating enable; border none
 for_window [class="Kmix"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
-exec --no-startup-id wmctrl -c Plasma
+# exec --no-startup-id wmctrl -c Plasma
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
 
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
@@ -34,7 +35,7 @@ bindsym $mod+d exec rofi -modi drun -show drun -display-drun "Apps " -line-paddi
                 -columns 2 -padding 10 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Noto Sans Regular 18"
 
-# change focus
+# change focus15
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -63,7 +64,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 #bindsym $mod+s layout stacking
-bindsym $mod+z layout tabbed
+#bindsym $mod+z layout tabbed
 bindsym $mod+s layout toggle split
 
 # toggle tiling / floating
@@ -80,10 +81,10 @@ bindsym $mod+space focus mode_toggle
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
+set $ws1 "1:code"
+set $ws2 "2:web"
 set $ws3 "3"
-set $ws4 "4"
+set $ws4 "4:discord"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -149,11 +150,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# mine
 # onstart
-exec --no-startup-id systemctl stop bluetoothctl
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/win11light.jpeg
-# exec --no-startup-id nitrogen --set-auto "/home/ekoehler/Pictures/Wallpapers/win11.jpg"
+# exec --no-startup-id systemctl stop bluetoothctl
+# exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/win11light_red.jpeg
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/debianLinux.jpg
 exec --no-startup-id redshift -O 3500
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
@@ -175,11 +175,9 @@ bindsym --release Print exec $HOME/.config/i3/screen.sh
 set $mode_system What do you wanna do ? (l)ogout, (s)uspend, (h)ibernate, (r)eboot, (CTRL+s)hutdown
 
 mode "$mode_system" {
-	bindsym l exec --no-startup-id i3-msg exit, mode "default"
-	bindsym s exec --no-startup-id $i3lockwall && systemctl suspend, mode "default"
-	bindsym h exec --no-startup-id $i3lockwall && systemctl hibernate, mode "default"
 	bindsym r exec --no-startup-id systemctl reboot, mode "default"
 	bindsym Ctrl+s exec --no-startup-id systemctl poweroff -i, mode "default"
+	bindsym l exec --no-startup-id i3-msg exit, mode "default"
 
 	# back to normal: Return or Escape
 	bindsym Return mode "default"
@@ -188,14 +186,15 @@ mode "$mode_system" {
 
 bindsym $mod+BackSpace mode "$mode_system"
 
+
 set $mode_browser What website you wanna go on ? (i)ntra, (g)rades, (o)utlook, gi(t)hub, (d)iscord
 
 mode "$mode_browser" {
-	bindsym i exec brave-browser "https://intra.epitech.eu/"
-	bindsym g exec brave-browser "https://my.epitech.eu/index.html#2020/all/all"
-	bindsym o exec brave-browser "https://outlook.office365.com/mail/inbox/id/AAQkAGUyMDhmOTZkLWMwZDAtNGYzNC05NjUzLTY5MDViZjZjNjBkYQAQABdEbpbBgk3CptB4x4OGQ98%3D"
-	bindsym t exec brave-browser "https://github.com/EpitechIT2020"
-	bindsym d exec brave-browser "https://discord.com/channels/689028807348191332/771686969167839242"
+	bindsym i exec google-chrome "https://intra.epitech.eu/"
+	bindsym g exec google-chrome "https://my.epitech.eu/index.html#2020/all/all"
+	bindsym o exec google-chrome "https://outlook.office365.com/mail/inbox/id/AAQkAGUyMDhmOTZkLWMwZDAtNGYzNC05NjUzLTY5MDViZjZjNjBkYQAQABdEbpbBgk3CptB4x4OGQ98%3D"
+	bindsym t exec google-chrome "https://github.com/EpitechIT2020"
+	bindsym d exec google-chrome "https://discord.com/channels/689028807348191332/771686969167839242"
 
 	# Return
 	bindsym Return mode "default"
