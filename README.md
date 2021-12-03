@@ -8,18 +8,11 @@ Here are my config files in case my Linux goes down. You should be able to find 
 - polybar
 - KDE
 
-I'm a newbie about making configurations... So be kind ! Maybe it is not the best way to do it, do not hesitate to tell me if something is wrong !
-
 # Screenshots for i3
 
-As the \*nixporn reddit community suggested me, I recently merged i3 and KDE together, in order to make my ricing even better ! There are some screeshots :<br/>
-![image](https://github.com/EvanKoe/configrc/blob/master/assets/chrome-terminal.jpg)
+I'm a newbie about making configurations... So be kind ! Maybe it is not the best way to do it, do not hesitate to tell me if something is wrong !
 
-![image](https://github.com/EvanKoe/configrc/blob/master/assets/dolphin.jpg)
-
-![image](https://github.com/EvanKoe/configrc/blob/master/assets/lite-xl.jpg)
-
-Terminal: Terminator <br/>
+Terminal: Konsole <br/>
 Shell: ZSH <br/>
 Navigator: Google Chrome <br/>
 Wallpaper: Windows 11 light ([Download it !](https://github.com/EvanKoe/configrc/blob/master/wallpapers/win11light.jpeg)) <br/>
@@ -32,7 +25,6 @@ Cli editor: Neovim <br/>
 Gui editor: Lite-xl ([Download it !](https://github.com/lite-xl/lite-xl)) <br/>
 File explorer: Dolphin <br/>
 
-# Screenshots for i3
 I recently used i3 in KDE instead of KWin, and I found it quite nice ! Here are some screens :
 ![image](https://github.com/EvanKoe/configrc/blob/master/assets/pipes.jpg)
 Multi terminal + Dolphin (compositor : forked Picom - blur + rounded corners)
