@@ -32,6 +32,14 @@ Cli editor: Neovim <br/>
 Gui editor: Lite-xl ([Download it !](https://github.com/lite-xl/lite-xl)) <br/>
 File explorer: Dolphin <br/>
 
+# Screenshots for i3
+I recently used i3 in KDE instead of KWin, and I found it quite nice ! Here are some screens :
+![image](https://github.com/EvanKoe/configrc/blob/master/assets/pipes.jpg)
+Multi terminal + Dolphin (compositor : forked Picom - blur + rounded corners)
+
+![iamge](https://github.com/EvanKoe/configrc/blob/master/assets/terminal.jpg)
+A simple centered terminal (Konsole)
+
 # Screenshots for KDE
 
 Also if you want to use KDE with the default WM/Compositor (KWin), you can still download my configs in the kde/ folder : 
